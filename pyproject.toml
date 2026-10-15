@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ctcox"
+version = "0.1.0"
+description = "Calibrated transfer learning for Cox survival prediction and treatment inference"
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [
+  {name = "Shuoyang Wang"},
+  {name = "Wanyu Zhang"},
+  {name = "Lingli Yang"},
+  {name = "Kexuan Li", email = "kexuan.li.77@gmail.com"},
+]
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.22", "scipy>=1.8"]
+
+[project.optional-dependencies]
+test = ["pytest>=7", "statsmodels>=0.13"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
