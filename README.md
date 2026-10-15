@@ -98,8 +98,7 @@ S = ct.predict_survival(times=[6, 12, 18], offset=net.predict(Xnew), z=Xnew, tre
 ## Citation
 
 Wang, S., Zhang, W., Yang, L., and Li, K. Calibrated transfer learning for survival prediction and treatment
-inference. Manuscript, 2026 (full reference to be added on publication). Shuoyang Wang and Wanyu Zhang
-contributed equally. Correspondence: Kexuan Li, kexuan.li.77@gmail.com.
+inference. Manuscript, 2026.
 
 ## License
 
